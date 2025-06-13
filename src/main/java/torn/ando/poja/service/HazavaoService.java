@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
@@ -13,7 +12,6 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class HazavaoService {
 
-  Dotenv dotenv = Dotenv.load();
 
   @Value("${openai_api_key}")
   private String apikey;
